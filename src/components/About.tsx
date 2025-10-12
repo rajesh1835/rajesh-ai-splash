@@ -7,7 +7,7 @@ const About = () => {
       degree: "B.Tech – Computer Science Engineering (AI&ML)",
       institution: "Sri Venkateswara College of Engineering and Technology, Chittoor",
       duration: "Nov 2022 – July 2026",
-      grade: "CGPA: 8.69",
+      grade: "CGPA: 8.6",
       status: "current"
     },
     {
