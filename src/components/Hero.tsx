@@ -73,8 +73,7 @@ const Hero = () => {
                 View Projects
               </Button>
               <Button 
-                size="lg" 
-                variant="outline" 
+                size="lg"
                 className="bg-white text-accent hover:bg-white/90 hover:scale-105 transition-all shadow-float"
               >
                 <Download className="mr-2" size={20} />
@@ -82,7 +81,6 @@ const Hero = () => {
               </Button>
               <Button 
                 size="lg" 
-                variant="outline" 
                 className="bg-white text-accent hover:bg-white/90 hover:scale-105 transition-all shadow-float"
               >
                 <Mail className="mr-2" size={20} />
