@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download, ExternalLink } from "lucide-react";
 import profileImage from "@/assets/rajesh-profile.jpg";
-
+import profileImage2 from "@/assets/r6.jpg";
 const Hero = () => {
   const [currentTagline, setCurrentTagline] = useState(0);
   
@@ -122,7 +122,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-white/20 shadow-float animate-float">
                 <img 
-                  src={profileImage} 
+                  src={profileImage2} 
                   alt="Tarigonda Rajesh" 
                   className="w-full h-full object-cover"
                 />
