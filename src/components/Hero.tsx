@@ -75,7 +75,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="bg-white/10 border-white text-white hover:bg-white hover:text-accent transition-all"
+                className="bg-white text-accent hover:bg-white/90 hover:scale-105 transition-all shadow-float"
               >
                 <Download className="mr-2" size={20} />
                 Resume
@@ -83,7 +83,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-accent transition-all"
+                className="bg-white text-accent hover:bg-white/90 hover:scale-105 transition-all shadow-float"
               >
                 <Mail className="mr-2" size={20} />
                 Contact Me
@@ -130,7 +130,7 @@ const Hero = () => {
               
               {/* Floating Info Card */}
               <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-card animate-pulse-glow">
-                <div className="text-sm font-semibold text-accent">AI/ML Student</div>
+                <div className="text-sm font-semibold text-accent">AI/ML Engineer</div>
                 <div className="text-xs text-muted-foreground">Available for Internships</div>
                 <div className="flex items-center mt-2">
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
