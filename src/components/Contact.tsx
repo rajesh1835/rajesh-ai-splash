@@ -62,8 +62,8 @@ const Contact = () => {
       title: "Location",
       value: "India",
       href: "https://www.google.com/maps/place/Hyderabad,+Telangana",
-      target:"_blank",
-      rel="noopener noreferrer"
+      target: "_blank",
+      rel: "noopener noreferrer"
     }
   ];
 
