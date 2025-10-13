@@ -54,14 +54,15 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      value: "+91 XXX XXX XXXX",
-      href: "tel:+91XXXXXXXXXX"
+      value: "+91 93461 54179",
+      href: "tel:+919346154179"
     },
     {
       icon: MapPin,
       title: "Location",
       value: "India",
-      href: "#"
+      href: "https://www.google.com/maps/place/Hyderabad,+Telangana",
+      target:"_blank"
     }
   ];
 
