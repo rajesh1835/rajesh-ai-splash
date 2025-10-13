@@ -1,26 +1,20 @@
 import { GraduationCap, Calendar, Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-
 const About = () => {
-  const education = [
-    {
-      degree: "B.Tech – Computer Science Engineering (AI&ML)",
-      institution: "Sri Venkateswara College of Engineering and Technology, Chittoor",
-      duration: "Nov 2022 – July 2026",
-      grade: "CGPA: 8.6",
-      status: "current"
-    },
-    {
-      degree: "Intermediate – MPC",
-      institution: "Sri Chaitanya Junior College, Tirupathi", 
-      duration: "Jan 2020 – Apr 2022",
-      grade: "Percentage: 88.83%",
-      status: "completed"
-    }
-  ];
-
-  return (
-    <section id="about" className="py-20 bg-background">
+  const education = [{
+    degree: "B.Tech – Computer Science Engineering (AI&ML)",
+    institution: "Sri Venkateswara College of Engineering and Technology, Chittoor",
+    duration: "Nov 2022 – July 2026",
+    grade: "CGPA: 8.6",
+    status: "current"
+  }, {
+    degree: "Intermediate – MPC",
+    institution: "Sri Chaitanya Junior College, Tirupathi",
+    duration: "Jan 2020 – Apr 2022",
+    grade: "Percentage: 88.83%",
+    status: "completed"
+  }];
+  return <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -49,7 +43,7 @@ const About = () => {
               <Card className="bg-gradient-card border-0 shadow-soft">
                 <CardContent className="p-6 text-center">
                   <Award className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-foreground">8.69</div>
+                  <div className="text-2xl font-bold text-foreground">8.6</div>
                   <div className="text-sm text-muted-foreground">Current CGPA</div>
                 </CardContent>
               </Card>
@@ -67,8 +61,7 @@ const About = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-foreground mb-6">Education</h3>
             <div className="space-y-6">
-              {education.map((edu, index) => (
-                <Card key={index} className="bg-gradient-card border-0 shadow-soft hover:shadow-card transition-all">
+              {education.map((edu, index) => <Card key={index} className="bg-gradient-card border-0 shadow-soft hover:shadow-card transition-all">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       <div className={`w-3 h-3 rounded-full mt-2 ${edu.status === 'current' ? 'bg-primary animate-pulse' : 'bg-secondary'}`}></div>
@@ -88,14 +81,11 @@ const About = () => {
                       </div>
                     </div>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
