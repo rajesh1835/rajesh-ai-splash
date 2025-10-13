@@ -5,19 +5,19 @@ import { Briefcase, Calendar } from "lucide-react";
 const experiences = [
   {
     title: "Data Science Intern",
-    company: "Oasis Infobyte",
-    duration: "June 2024 - July 2024",
+    company: "Indo Euro Syncronization",
+    duration: "February 2024 - May 2024",
     location: "Remote",
-    description: "Worked on machine learning models and data analysis projects, contributing to real-world applications.",
-    skills: ["Python", "Machine Learning", "Data Analysis", "Pandas", "Scikit-learn"]
+    description: "Worked on data analysis projects, contributing to real-world applications.",
+    skills: ["Python", "Numpy", "Pandas", "Data Analysis", "Power BI", "Tableau"]
   },
   {
     title: "AI/ML Research",
-    company: "Academic Projects",
-    duration: "2023 - Present",
-    location: "University",
+    company: "Edunet Foundation",
+    duration: "February 2025 - March 2025",
+    location: "Remote",
     description: "Conducting research in artificial intelligence and machine learning, focusing on practical implementations.",
-    skills: ["Deep Learning", "Neural Networks", "TensorFlow", "Research"]
+    skills: ["Deep Learning", "Machine Learning", "Neural Networks", "TensorFlow", "Research"]
   }
 ];
 
