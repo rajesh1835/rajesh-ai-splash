@@ -91,6 +91,51 @@ const Contact = () => {
         </div>
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          {/* Contact Information */}
+          <div className="space-y-6">
+            <Card>
+              <CardContent className="p-6 space-y-4">
+                {contactInfo.map((info, index) => (
+                  <a
+                    key={index}
+                    href={info.href}
+                    className="flex items-center gap-4 p-3 rounded-lg hover:bg-muted transition-colors"
+                  >
+                    <div className="p-3 rounded-full bg-primary/10">
+                      <info.icon className="text-primary" size={20} />
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">{info.title}</p>
+                      <p className="font-medium text-foreground">{info.value}</p>
+                    </div>
+                  </a>
+                ))}
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold text-foreground mb-4">
+                  Connect With Me
+                </h3>
+                <div className="flex gap-4">
+                  {socialLinks.map((social, index) => (
+                    <a
+                      key={index}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-4 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors flex items-center gap-2"
+                    >
+                      <social.icon className="text-primary" size={24} />
+                      <span className="text-sm font-medium text-foreground">{social.name}</span>
+                    </a>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
           {/* Contact Form */}
           <Card>
             <CardContent className="p-6">
@@ -140,51 +185,6 @@ const Contact = () => {
               </form>
             </CardContent>
           </Card>
-
-          {/* Contact Information */}
-          <div className="space-y-6">
-            <Card>
-              <CardContent className="p-6 space-y-4">
-                {contactInfo.map((info, index) => (
-                  <a
-                    key={index}
-                    href={info.href}
-                    className="flex items-center gap-4 p-3 rounded-lg hover:bg-muted transition-colors"
-                  >
-                    <div className="p-3 rounded-full bg-primary/10">
-                      <info.icon className="text-primary" size={20} />
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground">{info.title}</p>
-                      <p className="font-medium text-foreground">{info.value}</p>
-                    </div>
-                  </a>
-                ))}
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-4">
-                  Connect With Me
-                </h3>
-                <div className="flex gap-4">
-                  {socialLinks.map((social, index) => (
-                    <a
-                      key={index}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-4 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors flex items-center gap-2"
-                    >
-                      <social.icon className="text-primary" size={24} />
-                      <span className="text-sm font-medium text-foreground">{social.name}</span>
-                    </a>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
     </section>
