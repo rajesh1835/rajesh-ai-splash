@@ -5,31 +5,25 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Machine Learning Classification",
-    description: "Developed a classification model to predict outcomes using various ML algorithms with high accuracy.",
-    technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
-    github: "#",
+    title: "Air Quality Prediction",
+    description: "Developed a regression model to predict outcomes using various ML algorithms with high accuracy.",
+    technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Streamlit"],
+    github: "https://github.com/rajesh1835/Air-Quality-Prediction-.git",
     demo: "#"
   },
+
   {
-    title: "Data Analysis Dashboard",
-    description: "Interactive dashboard for visualizing and analyzing complex datasets with real-time updates.",
-    technologies: ["Python", "Plotly", "Streamlit", "SQL"],
-    github: "#",
-    demo: "#"
-  },
-  {
-    title: "AI Chatbot",
-    description: "Intelligent chatbot using natural language processing for customer service automation.",
-    technologies: ["Python", "NLP", "TensorFlow", "Flask"],
-    github: "#",
+    title: "Text Emotion Detection",
+    description: "Developed a Machine Learning model for classifying the emotion from the text.",
+    technologies: ["Python", "NLP", "NLTK", "Scikit-learn"],
+    github: "https://github.com/rajesh1835/Text-Emotion-Detection.git",
     demo: "#"
   },
   {
     title: "Portfolio Website",
     description: "Modern responsive portfolio website built with React and TypeScript.",
     technologies: ["React", "TypeScript", "Tailwind CSS"],
-    github: "#",
+    github: "https://github.com/rajesh1835/rajesh-ai-splash.git",
     demo: "#"
   }
 ];
