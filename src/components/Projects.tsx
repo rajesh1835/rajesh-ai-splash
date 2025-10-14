@@ -17,7 +17,7 @@ const projects = [
     description: "Developed a Machine Learning model for classifying the emotion from the text.",
     technologies: ["Python", "NLP", "NLTK", "Scikit-learn"],
     github: "https://github.com/rajesh1835/Text-Emotion-Detection.git",
-    demo: "#"
+    demo: "https://rajesh1835-text-emotion-detection-app.streamlit.app"
   },
   {
     title: "Portfolio Website",
