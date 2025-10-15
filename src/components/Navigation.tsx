@@ -42,8 +42,10 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
-            <Button variant="default" className="bg-gradient-button text-white hover:scale-105 transition-transform">
-              Resume
+            <Button variant="default" className="bg-gradient-button text-white hover:scale-105 transition-transform" asChild>
+              <a href="/Rajesh_ Resume.pdf" download="Tarigonda_Rajesh_Resume.pdf">
+                Resume
+              </a>
             </Button>
           </div>
 
@@ -72,8 +74,10 @@ const Navigation = () => {
                   {item.name}
                 </button>
               ))}
-              <Button className="w-full bg-gradient-button text-white mt-4">
-                Resume
+              <Button className="w-full bg-gradient-button text-white mt-4" asChild>
+                <a href="/Rajesh_ Resume.pdf" download="Tarigonda_Rajesh_Resume.pdf">
+                  Resume
+                </a>
               </Button>
             </div>
           </div>
