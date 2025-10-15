@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 import profilePhoto from "@/assets/r6.jpg";
 
 const Navigation = () => {
@@ -42,6 +43,7 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
+            <ThemeToggle />
             <Button variant="default" className="bg-gradient-button text-white hover:scale-105 transition-transform" asChild>
               <a href="/Rajesh_ Resume.pdf" download="Tarigonda_Rajesh_Resume.pdf">
                 Resume
@@ -50,7 +52,8 @@ const Navigation = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
             <Button
               variant="ghost"
               size="icon"
