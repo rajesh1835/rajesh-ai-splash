@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profilePhoto from "@/assets/rajesh-profile.jpg";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="w-8 h-8 rounded-full bg-gradient-button mr-3"></div>
+            <img src={profilePhoto} alt="Tarigonda Rajesh" className="w-8 h-8 rounded-full object-cover mr-3" />
             <span className="text-xl font-bold text-foreground">Tarigonda Rajesh</span>
           </div>
 
