@@ -68,6 +68,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="bg-white text-accent hover:bg-white/90 hover:scale-105 transition-all shadow-float"
+                onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <ExternalLink className="mr-2" size={20} />
                 View Projects
@@ -77,7 +78,7 @@ const Hero = () => {
                 className="bg-white text-accent hover:bg-white/90 hover:scale-105 transition-all shadow-float"
                 asChild
               >
-                <a href="/resume.pdf" download="Tarigonda_Rajesh_Resume.pdf">
+                <a href="/Rajesh_ Resume.pdf" download="Tarigonda_Rajesh_Resume.pdf">
                   <Download className="mr-2" size={20} />
                   Resume
                 </a>
@@ -85,6 +86,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="bg-white text-accent hover:bg-white/90 hover:scale-105 transition-all shadow-float"
+                onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <Mail className="mr-2" size={20} />
                 Contact Me
