@@ -17,19 +17,19 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     try {
       await emailjs.send(
-        'service_5y6txko',
-        'template_zp9jp69',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
         },
-        'h6-S7vnmoxjfKCc84'
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
-      
+
       toast({
         title: "Message Sent!",
         description: "Thank you for reaching out. I'll get back to you soon.",
